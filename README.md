@@ -102,17 +102,11 @@ Steps (Windows PowerShell):
 
 ```powershell
 # 1. Go to the project folder
-cd "path\to\query-router"
+ 
 
-# 2. Create a virtual environment
-py -m venv venv          # or: python -m venv venv
+ 
 
-# 3. Activate it (optional)
-.\venv\Scripts\Activate.ps1        # Windows PowerShell
-# venv\Scripts\activate.bat        # Windows cmd
-# source venv/bin/activate         # macOS / Linux
-
-# 4. Install dependencies (none required — stdlib only)
+# 2. Install dependencies (none required — stdlib only)
 pip install -r requirements.txt
 ```
 
@@ -128,20 +122,7 @@ With the virtual environment activated:
 python main.py
 ```
 
-Or without activating it, by calling the interpreter directly:
-
-```powershell
-.\venv\Scripts\python.exe main.py
-```
-
-Then type a question at the `Ask a question>` prompt:
-
-- `help` — show example queries
-- `exit` / `quit` / `q` — stop the application
-- `Ctrl+C` — stop at any time
-
-Routing decisions are printed as log lines on `stderr`; the agent name and
-response are printed on `stdout`.
+ 
 
 ## Example Inputs and Outputs
 
